@@ -7,9 +7,7 @@ trigger:
   - main
 
 pool:
-  name: Azure Pipelines
-  demands:
-      - agent.name -equals Hosted Agent
+  name: Default  # Matches your self-hosted agent pool
 
 steps:
   - task: Maven@4
